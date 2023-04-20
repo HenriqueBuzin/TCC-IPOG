@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  ubuntu:
+    container_name: dolo
+    restart: always
+    build:
+      context: ./dolo/
+      dockerfile: Dockerfile
+    volumes:
+      - './dolo/src/:/dolo/src/'
